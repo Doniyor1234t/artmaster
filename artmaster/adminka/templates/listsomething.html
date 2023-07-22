@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5" style="text-align: right;" ><a href="addsomething" class="btn btn-success" >add</a></div>
+    <table class="table table-hover container mt-5">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>type</th>
+                <th>soni</th>
+                <th>picture</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>name</td>
+                <td>type</td>
+                <td>soni</td>
+                <td>picture</td>
+                <td><a href="#" class="btn btn-warning">edit</a></td>
+                <td><a href="#" class="btn btn-danger">delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!-- <tbody>
+    {%for rad in radEtildi%}
+    <tr>
+        {% for tovar in tovarlar %}
+        {% if rad.tovar == tovar.id%}
+        <td>{{rad.id}}</td>
+        <td>{{rad.tovar}}</td>
+        <td>{{tovar.name}}</td>
+        <td>{{tovar.size}}</td>
+        <td>{{tovar.color}}</td>
+        <td>{{rad.soni}}</td>
+        <td>{{rad.data}}</td>
+        {% endif %}
+        {% endfor %}
+    </tr>
+    {%endfor%}
+</tbody> -->

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>ArtMix Master - "Frame catalog" </title>
+<style>
+  .size img{
+    width: 90%;
+  }
+  .size{
+    transition: 1s;
+  }
+  .size:hover {
+    transform: scale(1.1); 
+  }
+
+</style>
+{% endblock %}
+
+{% block body %}
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      {%for frame in Frames%}
+      <a href="/frame/2" style="text-decoration: none;">
+      <div class="col size">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">{{frame.shifr}}</h4>
+          </div>
+          <div class="card-body">
+            <img src="{{frame.imageUrl}}" alt="">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Артикул: <b>{{frame.shifr}}</b></li>
+              <li>Ширина: <b>{{frame}}</b></li>
+              <li>ArtMix Артикул: <b>{{frame.number}}</b></li>
+              <li>Метка: <b>{{frame.type}}</b></li>
+            </ul>
+            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+          </div>
+        </div>
+      </div></a>
+      <script>
+        console.log({frame});
+      </script>
+      {%endfor%}
+
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>ArtMix Gallerey - "Picture catalog"</title>
+<style>
+  main img{
+    width: 100%;
+    height: auto;
+  }
+  .size{
+    transition: 1s;
+  }
+  .size:hover {
+    transform: scale(1.1); 
+  }
+  a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<main>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 ">
+      {%for art in Arts%}
+      <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5 size">
+        <img src="{{art.imageUrl}}" class="b-block border rounded-3 shadow-sm" alt="{{art.nomi}}">
+        <h3 class="h5 mt-4 mb-3 mb-lg-0">
+          <a href="#" class="d-flex justify-content-center align-items-center stretched-link">{{art.name}}</a>
+          <!-- <p class="d-flex justify-content-center align-items-center stretched-link" style="font-size: 15px; margin-top: 20px;">{{art.type}}</p> -->
+        </h3>
+      </div>
+      {%endfor%}
+
+      <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5 size">
+        <img src="https://4kwallpapers.com/images/wallpapers/wooden-boat-mirror-lake-reflection-mountain-view-pond-2560x1440-5681.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
+        <h3 class="h5 mt-4 mb-3 mb-lg-0">
+          <a href="#" class="d-flex justify-content-center align-items-center stretched-link">Mobile App Showcase v.2</a>
+        </h3>
+      </div>
+      <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5 size">
+        <img src="https://4kwallpapers.com/images/wallpapers/wooden-boat-mirror-lake-reflection-mountain-view-pond-2560x1440-5681.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
+        <h3 class="h5 mt-4 mb-3 mb-lg-0">
+          <a href="#" class="d-flex justify-content-center align-items-center stretched-link">Startup</a>
+        </h3>
+      </div>
+      
+      
+      
+    </div>  
+
+</main>
+{% endblock %}
+

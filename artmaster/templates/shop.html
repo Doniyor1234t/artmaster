@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Online shop</title>
+<style>
+  main img{
+    width: 100%;
+    height: auto;
+  }
+  .size{
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+  }
+  .size:hover img {
+    transform: scale(1.5);
+  }
+  a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<main>
+  <div class="row">
+          <div class="col-md-4">
+        
+            <!-- Item -->
+            <a href="app.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top size">
+                <img src="https://4kwallpapers.com/images/wallpapers/wooden-boat-mirror-lake-reflection-mountain-view-pond-2560x1440-5681.jpg" alt="App landing" class="img-fluid ">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+            
+                <!-- Title -->
+                <h4 class="card-title">
+                  App landing
+                </h4>
+
+                <!-- Body -->
+                <p class="card-text text-muted">
+                  You can use this page to promote your web or mobile application.
+                </p>
+
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4">
+        
+            <!-- Item -->
+            <a href="company.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="https://4kwallpapers.com/images/wallpapers/wooden-boat-mirror-lake-reflection-mountain-view-pond-2560x1440-5681.jpg" alt="App landing" class="img-fluid">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+            
+                <!-- Title -->
+                <h4 class="card-title">
+                  Company landing <span class="badge badge-danger">New!</span>
+                </h4>
+
+                <!-- Body -->
+                <p class="card-text text-muted">
+                  You can use this page to promote your company.
+                </p>
+
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4">
+        
+            <!-- Item -->
+            <a href="fullpage.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="https://4kwallpapers.com/images/wallpapers/wooden-boat-mirror-lake-reflection-mountain-view-pond-2560x1440-5681.jpg" alt="Fullpage scrolling" class="img-fluid">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+            
+                <!-- Title -->
+                <h4 class="card-title">
+                  Fullpage scrolling
+                </h4>
+
+                <!-- Text -->
+                <p class="card-text text-muted">
+                  A landing page created with fullscreen scrolling sections.
+                </p>
+
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+          
+        </div>
+</main>
+{% endblock %}
+
